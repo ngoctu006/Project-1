@@ -1,0 +1,12 @@
+extends layouts/layout
+
+block vars
+  -title = 'Homepage'
+  -bodyClass = 'home'
+  -menuIndex = 0
+
+block container
+  main#main
+    .adv-block
+      include blocks/slidein
+      include blocks/slideintext

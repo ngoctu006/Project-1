@@ -1,0 +1,16 @@
+extends layouts/layout
+
+block vars
+  -title = 'Login'
+  -bodyClass = 'login'
+  -menuIndex = 4
+
+block container
+  .grid: .row: .col-lg-6.col-lg-offset-5: main#main: .accout-block
+    h1.title Login
+    .row: .col-lg-16
+      form.login-frm
+        +input-group-1({id: 'username', text: 'Login:', type: 'text', icon: 'wi-icon icon-mail', error: 'Please input username'})
+        +input-group-1({id: 'password', text: 'Mot de passe:', type: 'password', icon: 'wi-icon icon-mail', error: 'Please input password'})
+        .col-lg-8.col-lg-offset-8: +link('Mot de passe oublie').link-1
+        .col-lg-8.col-lg-offset-8: .form-group: +button('submit', 'Valider').button-1

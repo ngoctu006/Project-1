@@ -1,0 +1,23 @@
+mixin link(title, href, text, attr)
+  - if (typeof(text) === 'undefined') text = title
+  - if (typeof(href) === 'undefined') href = '#'
+  a(href=href, title=title)&attributes(attr?attr:attributes)
+    if block
+      block
+    else
+      !=text
+
+mixin listLink(obj, active)
+  -activeIndex = typeof(active) === 'number' ? active : ''
+  -count = 0
+  ul&attributes(attributes)
+    each item, key in obj
+      - var active = ''
+      for items in obj
+        - if (count === activeIndex) active = 'active'
+        - count++
+      li(class=active)
+        +link(item.title, item.href, item.text, item.attr)
+        - if (typeof(item.itemsMenu) !== 'undefined'){
+          +listLink(item.itemsMenu)
+        - }

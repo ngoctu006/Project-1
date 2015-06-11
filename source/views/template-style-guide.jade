@@ -1,0 +1,26 @@
+extends layouts/template
+
+block vars
+  -title = 'Style Guide'
+
+block container
+  .grid
+    h2 1. Annimation Slidein
+    include blocks/slidein
+    h2 2. Annimation Slideintext
+    include blocks/slideintext
+    h2 3. Slides Show
+    include blocks/slideshow
+        
+    h2 4. Link
+    p 4.1 link-1 class
+    +link("Ajouter à mes favorite").link-1
+    h2 5. Text
+    p 5.1. h2
+    h2 Description
+    p 5.2. h3
+    h3 Logement économe
+    p 5.3. Link load more
+    +link("Load more").link-2
+
+

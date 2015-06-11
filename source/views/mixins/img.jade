@@ -1,0 +1,8 @@
+mixin img(alt, src)
+	- if (typeof(src) === 'undefined') href = 'images/transparent.png'
+	img(src="#{src}", alt="#{alt}")&attributes(attributes)
+
+mixin imgLink(alt, src, href)
+	- if (typeof(href) === 'undefined') href = '#'
+	a(href="#{href}", title="#{alt}")&attributes(attributes)
+		img(src="#{src}", alt="#{alt}")

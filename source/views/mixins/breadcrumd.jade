@@ -1,0 +1,13 @@
+mixin breadcrumb(obj, active)
+  -count = 0
+  -activeIndex = typeof(active) === 'number' ? active : ''
+  ul.breadcrumb&attributes(attributes)
+    for items in obj
+      li
+        -if (count === activeIndex) {
+          !=items.item
+        -}
+        -else {
+          +link(items.item, items.href, items.text)
+        -}
+      -count++

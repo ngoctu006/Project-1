@@ -1,0 +1,10 @@
+mixin thumbnail(ObjThumb)
+  +link(ObjThumb.title, ObjThumb.href, ObjThumb.text, ObjThumb.attr)
+    .img-wrap
+      +img(ObjThumb.alt, ObjThumb.src)
+    .caption
+      h2!=ObjThumb.title
+      span.price Priser fra: 
+        strong=ObjThumb.price
+        |€
+      p!=ObjThumb.desc

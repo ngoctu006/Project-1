@@ -1,0 +1,28 @@
+extends layouts/template
+
+block vars
+  -title = 'Sprite'
+
+block container
+  h2 Icon
+  p 1. wi-icon-next-small
+  +link("Next").wi-icon.wi-icon-next-small
+  p 2. wi-icon-prev-small
+  +link("Prev").wi-icon.wi-icon-prev-small
+  p 3. wi-icon-next-big
+  +link("Next").wi-icon.wi-icon-next-big
+  p 4. wi-icon-prev-big
+  +link("Prev").wi-icon.wi-icon-prev-big
+  p 5. icon-arrow
+  +link("arrow", "javascript:;").wi-icon.icon-arrow
+  p 6. Mail icon
+  +link("mail", "mailto:abc@gmail.com").wi-icon.icon-mail
+  p 7. Print icon
+  +link("print", "javascript:window.print()").wi-icon.icon-print
+  h2 Text
+  h2 Button
+  h2 Form
+  h2 Form Elements
+  h2 Corner
+  h2 Background
+  h2 General

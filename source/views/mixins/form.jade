@@ -1,0 +1,27 @@
+mixin select(opts, name, id, dataUrl, dataDes)
+  select(name=name, id=id?id:name)&attributes(attributes)
+    -each opt in opts
+      option(value=opt.value, data-ajax-url="data/#{dataUrl}.html", data-ajax-des="#{dataDes}")=(opt.text?opt.text:opt.value)
+mixin cus-select(items)
+  .custom-select(data-custom-select)&attributes(attributes)
+    +select(items.opts, items.name, items.id, items.dataUrl, items.dataDes)
+
+mixin input(type, id, name, placehoder)
+  - if (typeof(placehoder) === 'undefined') placehoder = ''
+  input(type=type, placeholder=placehoder, name=name?name:id, id=id)&attributes(attributes)
+
+mixin input-1(obj)
+  .input-1&attributes(attributes)
+    span: i(class=obj.icon)
+    +input(obj.type, obj.id, obj.name, obj.placehoder)
+
+mixin input-group-1(obj)
+  .form-group&attributes(attributes)
+    label.col-lg-8(for=obj.id)!= obj.text
+    .col-lg-8
+      +input-1(obj)
+      - if (typeof(obj.error) !== 'undefined')
+        p.error.hidden!=obj.error
+
+mixin button(type, value, id)
+  button(type=type, id=id?id:"")&attributes(attributes)!= value

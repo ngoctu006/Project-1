@@ -1,0 +1,9 @@
+mixin thumbnail(ObjThumb)
+	li&attributes(attributes)
+		+link(ObjThumb.title, ObjThumb.href, ObjThumb.text)
+			+img(ObjThumb.alt, ObjThumb.src)
+			.caption
+				h2=ObjThumb.title
+				span Price
+					strong=ObjThumb.price
+				p=ObjThumb.desc
