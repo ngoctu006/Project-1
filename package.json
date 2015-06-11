@@ -1,11 +1,11 @@
 {
-  "name": "Frontend",
-  "description": "Frontend template",
+  "name": "HTML",
+  "description": "Project-1 template",
   "version": "0.1.0",
   "main": "Gruntfile.js",
   "repository": {
     "type": "git",
-    "url": "git@git.sutrix.com:len.nguyen/frontend-template.git"
+    "url": "https://github.com/YUMI-TRIEU/Project-1.git"
   },
   "engines": {
     "node": "~0.10.x",
@@ -40,6 +40,6 @@
     "time-grunt": "~1.0.0"
   },
   "keywords": [
-    "Frontend template"
+    "Project-1 template"
   ]
 }
