@@ -2,10 +2,9 @@ mixin nav(items)
   ul
     each item, key in items
       - var active = ''
-      - newText = item.title + '&nbsp;'
       - if (key === menuIndex) active = 'active'
       li(class=active)
-        +link(item.title, item.href, newText)(class=item.class, data-hover="#{item.title}")
+        +link(item.title, item.href, item.text)(class=item.class)
         - if (typeof(item.itemsMenu) !== 'undefined'){
           +nav(item.itemsMenu)
         - }
