@@ -2752,12 +2752,13 @@ img {
           background: #000; }
 
 .section.section-search {padding-bottom: 0;}
-.section-search {color: #fff; }
+.section-search {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.85);
+}
   .section-search form {
-    display: block;
     overflow: hidden;
-    padding: 30px 0;
-    background: rgba(0, 0, 0, 0.85);}
+    padding: 30px 0;}
     .section-search form > div input, .section-search form > div select {
       height: 50px;
       font-family: 'montserratregular', Helvetica, Arial, sans-serif;
