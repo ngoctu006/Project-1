@@ -55,7 +55,7 @@
           </div>
         </header>
         <main id="main">
-          <div class="section section-slider-full">
+          <div class="section section-slider-full clearfix">
             <div class="section-owlcarousel-full">
               <div class="item"><img src="images/slider-1.jpg" alt="slider 1"/>
                 <div class="caption-slider">
@@ -110,43 +110,45 @@
               </div>
             </div>
           </div>
-          <div class="section section-search">
-            <div class="container-fluid">
+          <div class="section-search">
+            <div class="container">
               <div class="row">
-                <form action="" method="POST" name="search-form">
-                  <div class="col-md-3">
-                    <div class="search-input"><i class="fa fa-search"></i>
-                      <input type="text" name="search-text" placeholder="TROUVEZ  VOTRE VOYAGE" class="search-text">
+                <div class="col-md-12">
+                  <form action="" method="POST" name="search-form">
+                    <div class="col-md-3">
+                      <div class="search-input"><i class="fa fa-search"></i>
+                        <input type="text" name="search-text" placeholder="TROUVEZ VOTRE VOYAGE" class="search-text">
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-md-7">
-                    <div class="search-select">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="destination-select">
-                            <i class="fa fa-globe"></i>
-                            <select name="destination" class="destination">
-                              <option>Destination</option>
-                            </select>
+                    <div class="col-md-7">
+                      <div class="search-select">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="destination-select">
+                              <i class="fa fa-globe"></i>
+                              <select name="destination" class="destination">
+                                <option>Destination</option>
+                              </select>
+                            </div>
                           </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="type-de-voyage-select">
-                            <i class="fa fa-users"></i>
-                            <select name="type-de-voyage" class="type-de-voyage">
-                              <option>Type de voyage</option>
-                            </select>
+                          <div class="col-md-6">
+                            <div class="type-de-voyage-select">
+                              <i class="fa fa-users"></i>
+                              <select name="type-de-voyage" class="type-de-voyage">
+                                <option>Type de voyage</option>
+                              </select>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
-                    <div class="submit">
-                      <input type="submit" name="search-submit" value="RECHERCHER" class="search-submit">
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                      <div class="submit">
+                        <input type="submit" name="search-submit" value="RECHERCHER" class="search-submit">
+                      </div>
                     </div>
-                  </div>
-                </form>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -497,7 +499,7 @@
           <div class="container">
             <div class="footer-content">
               <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 block-newsletter">
+                <div class="col-md-4 hidden-sm hidden xs block-newsletter">
                   <div class="title-footer">Recevoir la newsletter</div>
                   <div class="desc">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse mole autem vel eum iriure dolor instie consequat, vel illum dolore.</div>
                   <div class="form">
@@ -507,18 +509,19 @@
                     </form>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 block-img"><img src="images/img-5.png" alt="Company"/>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 block-address">
+                <div class="col-md-4 block-img hidden-sm hidden-xs"><img src="images/img-5.png" alt="Company"/></div>
+                <div class="col-md-4 block-address">
                   <div class="title-footer">Notre Agence</div>
                   <div class="desc">
                     <p>Les Ateliers du Voyage - <br>54/56 avenue Bosquet - 75007 Paris</p>
                     <p>Horaires : du lundi au jeudi de 10h00 <br>à 18h30 le vendredi de 10h00 à 18h00</p>
                   </div>
+                  <div class="tel visible-xs-block text-center"><a href="tel:0140621660" title="01 40 62 16 60"><i class="fa fa-phone"></i>01 40 62 16 60</a>
+                  </div>
                   <div class="social-link"><a href="#" title="facebook"><i class="fa fa-facebook"></i></a><a href="#" title="twitter"><i class="fa fa-twitter"></i></a><a href="#" title="pinterest"><i class="fa fa-pinterest"></i></a></div>
                 </div>
               </div>
-              <div class="row footer-2">
+              <div class="row footer-2 hidden-sm hidden-xs">
                 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                   <div class="title-footer-small">VOTRE VOYAGE SUR-MESURE</div>
                   <ul>
@@ -584,20 +587,32 @@
             </div>
           </div>
           <div class="block-footer-bottom">
-            <div class="block-link">
-              <ul>
-                <li> <a href="#" title="Accueil">Accueil </a>
-                </li>
-                <li><a href="#" title="Conditions de vente ">Conditions de vente  </a>
-                </li>
-                <li><a href="#" title="Mentions légales">Mentions légales </a>
-                </li>
-                <li><a href="#" title="Plan du site">Plan du site </a>
-                </li>
-              </ul>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="block-link">
+                    <ul>
+                      <li> <a href="#" title="Accueil">Accueil </a>
+                      </li>
+                      <li><a href="#" title="Conditions de vente ">Conditions de vente  </a>
+                      </li>
+                      <li><a href="#" title="Mentions légales">Mentions légales </a>
+                      </li>
+                      <li><a href="#" title="Plan du site">Plan du site </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="block-coppyright">Copyright @Ateliersduvoyage. Tous droits réservés</div>
-            <div class="gotop"><a href="#"><i class="fa fa-arrow-up"></i></a></div>
+            <div class="block-coppyright">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">Copyright @Ateliersduvoyage. Tous droits réservés</div>
+                </div>
+              </div>
+            </div>
+            <div class="gotop hidden-xs"><a href="#"><i class="fa fa-arrow-up"></i></a></div>
           </div>
         </footer>
         <div class="page-overlay"></div>
