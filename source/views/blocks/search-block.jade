@@ -1,0 +1,20 @@
+.section.section-search
+  .container-fluid
+    form(action="" method="POST" name="search-form")
+      .row
+        .col-md-3
+          .search-input
+            i.fa.fa-search
+            +input('text','TROUVEZ  VOTRE VOYAGE', 'search-text').search-text
+        .col-md-7
+          .search-select
+            span
+              i.fa.fa-globe
+              select.destination(name="destination")
+                option Destination
+              i.fa.fa-users
+              select.type-de-voyage(name="type-de-voyage")
+                option Type de voyage
+        .col-md-2
+          .submit
+            +input('submit', '', 'search-submit', 'search-submit', 'RECHERCHER').search-submit
