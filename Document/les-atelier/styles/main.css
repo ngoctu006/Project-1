@@ -2501,13 +2501,8 @@
     margin-bottom: 2px; }
 
 #header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 114px;
-  border-bottom: 1px solid #ccc;
-  z-index: 99; }
+  border-bottom: 1px solid #ccc;}
   #header .header-mask {
     position: relative; }
   #header .header-overlayer {
@@ -2728,11 +2723,10 @@ img {
 .section.section-search {padding-bottom: 0;}
 .section-search {color: #fff; }
   .section-search form {
+    display: block;
     overflow: hidden;
     padding: 30px 0;
     background: rgba(0, 0, 0, 0.85);}
-  .section-search form > div {
-    margin-top: 30px; }
     .section-search form > div input, .section-search form > div select {
       height: 50px;
       font-family: 'montserratregular', Helvetica, Arial, sans-serif;
@@ -2751,7 +2745,8 @@ img {
         top: 11px;
         left: 0; }
     .type-de-voyage-select, .destination-select {
-      position: relative; }
+      position: relative;
+      cursor: pointer; }
     .section-search form > div .search-select select {
       background: #fff;
       border: none;

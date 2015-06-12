@@ -6,7 +6,10 @@
   }
   .section-slider-full .caption-slider .block-info .text-small span {margin: 0;}
   .section-slider-full .caption-slider .block-button a {min-width: 245px;}
-  
+
+  /*Slide show*/
+  .section-slider-full .owl-item img {height: 430px;}
+
   /*Homepage - search section*/
   .type-de-voyage-select{margin-top: 5px;}
   .section-search form {padding: 0;}
