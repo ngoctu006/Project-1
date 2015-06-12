@@ -6,9 +6,10 @@ mixin cus-select(items)
   .custom-select(data-custom-select)&attributes(attributes)
     +select(items.opts, items.name, items.id, items.dataUrl, items.dataDes)
 
-mixin input(type, id, name, placehoder)
+mixin input(type, id, name, placehoder, value)
   - if (typeof(placehoder) === 'undefined') placehoder = ''
-  input(type=type, placeholder=placehoder, name=name?name:id, id=id)&attributes(attributes)
+  - if (typeof(value) === 'undefined') value = ''
+  input(type=type, placeholder=placehoder, name=name?name:id, id=id, value=value)&attributes(attributes)
 
 mixin input-1(obj)
   .input-1&attributes(attributes)
