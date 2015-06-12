@@ -13,10 +13,13 @@
     <meta name="robots" content="index, follow">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
     <script src="scripts/modernizr.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   </head>
   <body class="index">
     <div id="container">
@@ -25,7 +28,7 @@
           <div class="header-overlayer"></div>
           <div class="container clearfix">
             <div class="header-mask">
-              <div class="block-contact-info"><a href="#" title="Mon compte" class="link-mon-compote">Mon compte<i class="fa fa-user"></i></a><a href="#" title="NOS BROCHURES" class="link-nos-brochures">NOS BROCHURES</a><a href="#" title="0820 220 305" class="phone">0820 220 305<i class="fa fa-phone"></i></a>
+              <div class="block-contact-info hidden-sm hidden-xs"><a href="#" title="Mon compte" class="link-mon-compote">Mon compte<i class="fa fa-user"></i></a><a href="#" title="NOS BROCHURES" class="link-nos-brochures">NOS BROCHURES</a><a href="#" title="0820 220 305" class="phone">0820 220 305<i class="fa fa-phone"></i></a>
               </div>
               <div class="row">
                 <div class="col-sm-12">
@@ -35,7 +38,7 @@
                   </div>
                   <div class="columns menu">
                     <div class="nav-collapsed"><span class="icon-bar"></span></div>
-                    <div class="navigation">
+                    <div class="navigation hidden-sm hidden-xs">
                       <ul>
                         <li><a href="undefined" title=""><span>VOYAGE </span><br/>SUR-MESURE</a></li>
                         <li><a href="undefined" title=""><span>NOS </span><br/>dEstinations                    </a></li>
@@ -108,22 +111,35 @@
             </div>
           </div>
           <div class="section section-search">
-            <div class="container">
+            <div class="container-fluid">
               <div class="row">
                 <form action="" method="POST" name="search-form">
-                  <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                  <div class="col-md-3">
                     <div class="search-input"><i class="fa fa-search"></i>
                       <input type="text" name="search-text" placeholder="TROUVEZ  VOTRE VOYAGE" class="search-text">
                     </div>
                   </div>
-                  <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12"> 
-                    <div class="search-select"><span><i class="fa fa-globe"></i>
-                        <select name="destination" class="destination">
-                          <option>Destination</option>
-                        </select></span><span><i class="fa fa-users"></i>
-                        <select name="type-de-voyage" class="type-de-voyage">
-                          <option>Type de voyage</option>
-                        </select></span></div>
+                  <div class="col-md-7">
+                    <div class="search-select">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="destination-select">
+                            <i class="fa fa-globe"></i>
+                            <select name="destination" class="destination">
+                              <option>Destination</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="type-de-voyage-select">
+                            <i class="fa fa-users"></i>
+                            <select name="type-de-voyage" class="type-de-voyage">
+                              <option>Type de voyage</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
                     <div class="submit">
@@ -453,7 +469,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <div class="col-md-6 hidden-sm hidden-xs">
                     <div class="block-actualites">
                       <div class="introduction-text">
                         <div class="row">

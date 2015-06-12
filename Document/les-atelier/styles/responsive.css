@@ -1,0 +1,18 @@
+@media (max-width: 767px) {
+
+  .section-slider-full .caption-slider .block-info .text-small :before, .section-slider-full .caption-slider .block-info .text-small :before,
+  .section-slider-full .caption-slider .block-info .text-small :before, .section-slider-full .caption-slider .block-info .text-small :after {
+    width: 30px;
+  }
+  .section-slider-full .caption-slider .block-info .text-small span {margin: 0;}
+  .section-slider-full .caption-slider .block-button a {min-width: 245px;}
+
+  /*Slide show*/
+  .section-slider-full .owl-item img {height: 430px;}
+
+  /*Homepage - search section*/
+  .type-de-voyage-select{margin-top: 5px;}
+  .section-search form {padding: 0;}
+  .section-search form > div {margin-top: 0;}
+  .section-search .submit {margin: 20px 0;}
+}

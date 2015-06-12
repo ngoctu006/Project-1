@@ -2505,10 +2505,6 @@
 }
 
 #header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 114px;
   border-bottom: 1px solid #ccc;
   z-index: 99;
@@ -2755,18 +2751,13 @@ img {
         .section-slider-full .caption-slider .block-button a.btn-2 {
           background: #000; }
 
-.section-search {
-  position: absolute;
-  left: 0;
-  top: 668px;
-  height: 103px;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.85);
-  z-index: 999;
-  color: #fff;
-  padding-bottom: 0; }
-  .section-search form > div {
-    margin-top: 30px; }
+.section.section-search {padding-bottom: 0;}
+.section-search {color: #fff; }
+  .section-search form {
+    display: block;
+    overflow: hidden;
+    padding: 30px 0;
+    background: rgba(0, 0, 0, 0.85);}
     .section-search form > div input, .section-search form > div select {
       height: 50px;
       font-family: 'montserratregular', Helvetica, Arial, sans-serif;
@@ -2784,24 +2775,26 @@ img {
         position: absolute;
         top: 11px;
         left: 0; }
-    .section-search form > div .search-select span {
-      position: relative; }
+    .type-de-voyage-select, .destination-select {
+      position: relative;
+      cursor: pointer; }
     .section-search form > div .search-select select {
       background: #fff;
       border: none;
       font-size: 12px;
       color: #8a8a8a;
-      width: 48%;
-      margin: 0 1%;
-      padding-left: 35px;
+      width: 100%;
+      padding-left: 45px;
       font-family: 'montserratbold', Helvetica, Arial, sans-serif; }
     .section-search form > div .search-select i {
       font-size: 25px;
       color: #44b955;
       position: absolute;
-      top: -3px;
+      top: 50%;
+      margin-top: -12.5px;
       left: 13px; }
     .section-search form > div .submit input {
+      width: 100%;
       background: #44b955;
       border: none;
       color: #fff;
