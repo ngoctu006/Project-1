@@ -1,0 +1,213 @@
+@media (max-width: 767px) {
+
+  .section-slider-full .caption-slider .block-info .text-small :before, .section-slider-full .caption-slider .block-info .text-small :before,
+  .section-slider-full .caption-slider .block-info .text-small :before, .section-slider-full .caption-slider .block-info .text-small :after {
+    width: 30px;
+  }
+  .section-slider-full .caption-slider .block-info .text-small span {margin: 0;}
+  .section-slider-full .caption-slider .block-button a {min-width: 245px;}
+
+  /*Slide show*/
+  .section-slider-full .owl-item img {height: 430px;}
+
+  /*Homepage - search section*/
+  .type-de-voyage-select{margin-top: 5px;}
+  .section-search form {padding: 0;}
+  .section-search form > div {margin-top: 0;}
+  .section-search .submit {margin: 20px 0;}
+
+  /*Footer*/
+  #footer {padding-top: 35px;}
+  .tel {font-size: 25px;}
+    .tel a {
+      display: block;
+      padding: 5px 0 15px;
+      border-bottom: 1px solid #4b4949;
+      color: #b59759;
+      text-decoration: none;}
+    .tel a:hover {opacity: 0.8;}
+    .tel .fa-phone {
+      margin-right: 15px;
+    }
+  #footer .block-address .social-link {padding: 15px 0; text-align: center;}
+  #footer .block-address .social-link a i {
+    font-size: 30px;
+  }
+  #footer .block-footer-bottom {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  #footer .block-footer-bottom .block-link {
+    padding: 5px 0;
+    border-top: 1px solid #4b4949;
+    border-bottom: 1px solid #4b4949;
+  }
+  #footer .block-footer-bottom .block-link ul {margin: 0; padding: 0;}
+  #footer .block-footer-bottom .block-link li {
+    position: relative;
+    display: block;
+    border: 0;
+    padding: 10px 0;
+  }
+  #footer .block-footer-bottom .block-link li:last-child:after {height: 0;}
+  #footer .block-footer-bottom .block-link li:after {
+    position: absolute;
+    left: 50%;
+    margin-left: -2px;
+    bottom: 0;
+    content: '';
+    width: 4px;
+    height: 1px;
+    background-color: #4b4949;
+  }
+  #footer .block-footer-bottom .block-coppyright {
+    padding: 15px 0;
+    font-size: 10px;
+    color: #4b4949;
+  }
+
+  /*//eidt by Ngoc Tu*/
+ .owlcarousel-item .container{
+      padding-left:0 !important;
+      padding-right:0 !important;
+  }
+
+  .section-vos-envies .owl-controls .owl-prev,
+  .section-vos-envies .owl-controls .owl-next{
+      height: 100%;
+      width: 35px;
+  }
+  .section-vos-envies .container-fluid,
+  .section-vos-envies .owl-carousel{
+      padding-left:  0px;
+      padding-right: 0px;
+  }
+  .section.section-vos-envies .item {
+    margin:0px;
+  }
+  .section-vos-envies .owl-controls .owl-dots{
+      bottom: -40px;
+  }
+  .section-team .owl-controls .owl-dots{
+     bottom: -70px;
+  }
+  .section-team  .owl-controls .owl-dots .owl-dot,
+  .section-vos-envies  .owl-controls .owl-dots .owl-dot{
+      background-image: none;
+      background-color: #DEDEDE;
+      border-radius: 40px;
+  }
+  .section-team .owl-controls .owl-dots .owl-dot.active,
+  .section-vos-envies .owl-dots .owl-dot.active{
+     background-color: #000000;
+      border: solid 4px #ccc;
+  }
+  .section-team .section-owlcarousel-item .item{
+      width: auto;
+  }
+  .section-vos-envies .section-slider .row {
+      margin-left: 0;
+      margin-right: 0; 
+  }
+  .section-team .section-owlcarousel-item .row {
+      margin-left: 0;
+      margin-right: 0; 
+  }
+  .section-team .section-owlcarousel-item .owl-controls .owl-prev, 
+  .section-team .section-owlcarousel-item .owl-controls .owl-next{
+      background: none;
+      width: 35px;
+/*        left: 15px !important;*/
+  }
+  .section-team  .owl-controls .owl-prev .icon, 
+  .section-team  .owl-controls .owl-next .icon{
+      left: 15px !important;
+  }
+  .section-slider-full,
+  .section-search,
+  .section-vos-envies,
+  .section-team,
+  .section-nos-conseillers,
+  .section-decouvrez-aussi
+  {
+    padding-bottom: 85px;
+  }
+  .section-vos-envies .owl-controls .owl-prev .icon,
+  .section-vos-envies .owl-controls .owl-next .icon {
+      left: 7px;
+  }
+  .section-nos-conseillers{
+      display:none;
+  }
+  .section-decouvrez-aussi .slider-decouvrez-aussi .block-btn {
+    top: 110px;
+  }
+  .section-decouvrez-aussi .slider-decouvrez-aussi .caption-1{
+    opacity: 1;
+    background: none;
+  }
+  .section-decouvrez-aussi .slider-decouvrez-aussi .caption-1 {
+        width: 100%;
+  }
+  .section-decouvrez-aussi .slider-decouvrez-aussi .caption-1 .block-top{
+     border: none;
+     width: 100%;
+  }
+  .section-decouvrez-aussi .slider-decouvrez-aussi .caption-1 .block-top .title{
+      font-size: 15.97px;
+  }
+  .section-decouvrez-aussi .slider-decouvrez-aussi .caption-1 .block-top{
+      padding: 25px 10px;
+  }
+  .section-decouvrez-aussi .slider-decouvrez-aussi .caption-1 .decs,
+  .section-decouvrez-aussi .slider-decouvrez-aussi .caption-1 .block-bottom,
+  .section-decouvrez-aussi .slider-decouvrez-aussi .caption-2{
+      display: none;
+  }
+  .section-decouvrez-aussi .owl-controls .owl-dots{
+      bottom: -50px;
+  }
+  .section-decouvrez-aussi .container{
+       padding-left: 0px; 
+       padding-right: 0px; 
+  }
+  .section-decouvrez-aussi .owlcarousel-content{
+      position: relative;
+  }
+  .section-decouvrez-aussi .slider-decouvrez-aussi .owl-controls .owl-prev{
+        z-index: 100;
+        top: 0;
+        height: 100%;
+        width: 12%;
+        left: -15px;
+        background: rgba(0, 0, 0, 0.5);
+  }
+  .section-decouvrez-aussi .slider-decouvrez-aussi .owl-controls .owl-next{
+    width: 12%;
+    right: -15px;
+    height: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+
+  }
+  .section-decouvrez-aussi .slider-decouvrez-aussi .owl-controls .owl-prev .icon{
+      top: 28%;
+      left: 15px;
+  }
+  .section-decouvrez-aussi .slider-decouvrez-aussi .owl-controls .owl-next .icon{
+      top: 28%;
+      left: 5px;
+  }
+  .section-decouvrez-aussi .slider-decouvrez-aussi .block-btn a{
+    position: absolute;
+    bottom: 23%;
+    right: 0;
+  }
+  .section-decouvrez-aussi .slider-decouvrez-aussi .block-btn{
+      position: static;
+  }
+  .section-decouvrez-aussi .slider-decouvrez-aussi .owl-controls .owl-nav{
+      position: static;
+  }
+}

@@ -16,7 +16,7 @@ window.LADV = window.LADV || {}, window.LADV.Index = function() {
                     navText: ['<i class="icon icon-prev"></i>', '<i class="icon icon-next"></i>'],
                     margin: 0
                 }),
-              n.find(".section-vos-envies").length && n.find(".section-team").length
+              n.find(".section-vos-envies").length &&               n.find(".section-team").length
           ) {
 
               
@@ -69,34 +69,6 @@ window.LADV = window.LADV || {}, window.LADV.Index = function() {
           
 
             }
-            if(n.find(".slider-decouvrez-aussi").length ){
-               n.find(".slider-decouvrez-aussi .owlcarousel-content").owlCarousel({
-                   center: !1,
-                   items: 4,
-                   loop: !0,
-                   dots: !1,
-                   nav: !0,
-                   navText: ['<i class="icon icon-prev"></i>', '<i class="icon icon-next"></i>'],
-                   margin: 20,
-                  responsive:
-                            {
-                               0: {
-                                center: true,
-                                items: 2,
-                                mergeFit: true,
-                                margin: 20,
-                                merge: true,
-                                dots: true,
-                                nav: true,
-                             },
-                                600: {
-                                    items: 4,
-                                    margin: 20
-                                }
-                            }
-                   
-               })
-            }
             if (n.find(".section-nos-conseillers").length) {
                 var c = n.find(".section-nos-conseillers .owlcarousel-content");
                 c.owlCarousel({center: !0,items: 1,loop: !0,nav: !0,navText: ['<i class="icon icon-prev"></i>', '<i class="icon icon-next"></i>'],margin: 0}).on("change.owl.carousel", function(i) {
@@ -126,18 +98,7 @@ window.LADV = window.LADV || {}, window.LADV.Index = function() {
 window.LADV.TourDetail = function() {
     var i = {}, n = $(".tour-detail");
     return i.initUI = function() {
-        n.find(".block-slider-day").length && n.find(".block-slider-day .owlcarousel-full").owlCarousel({
-            center: !1,
-            items: 10,
-            loop: !1,
-            dots: !1,
-            nav: !0,
-            autoWidth: !0,
-            navText: ['<i class="icon icon-prev"></i>', '<i class="icon icon-next"></i>'],margin: 1
-        }),
-                n.find(".block-silder-pointer-address").length && n.find(".block-silder-pointer-address").owlCarousel({center: !0,items: 1,loop: !0,dots: !1,nav: !0,navText: ['<i class="icon icon-prev"></i>', '<i class="icon icon-next"></i>'],margin: 0}),
-                n.find(".slider-decouvrez-aussi").length && n.find(".slider-decouvrez-aussi .owlcarousel-content").owlCarousel({center: !1,items: 4,loop: !0,dots: !1,nav: !0,navText: ['<i class="icon icon-prev"></i>', '<i class="icon icon-next"></i>'],margin: 20}),
-                n.find(".section-block-service").length && n.find(".section-block-service .owlcarousel-content").owlCarousel({center: !0,items: 1,loop: !0,dots: !1,nav: !0,navText: ['<i class="icon icon-prev"></i>', '<i class="icon icon-next"></i>'],margin: 0})
+        n.find(".block-slider-day").length && n.find(".block-slider-day .owlcarousel-full").owlCarousel({center: !1,items: 10,loop: !1,dots: !1,nav: !0,autoWidth: !0,navText: ['<i class="icon icon-prev"></i>', '<i class="icon icon-next"></i>'],margin: 1}), n.find(".block-silder-pointer-address").length && n.find(".block-silder-pointer-address").owlCarousel({center: !0,items: 1,loop: !0,dots: !1,nav: !0,navText: ['<i class="icon icon-prev"></i>', '<i class="icon icon-next"></i>'],margin: 0}), n.find(".slider-decouvrez-aussi").length && n.find(".slider-decouvrez-aussi .owlcarousel-content").owlCarousel({center: !1,items: 4,loop: !0,dots: !1,nav: !0,navText: ['<i class="icon icon-prev"></i>', '<i class="icon icon-next"></i>'],margin: 20}), n.find(".section-block-service").length && n.find(".section-block-service .owlcarousel-content").owlCarousel({center: !0,items: 1,loop: !0,dots: !1,nav: !0,navText: ['<i class="icon icon-prev"></i>', '<i class="icon icon-next"></i>'],margin: 0})
     }, i.init = function() {
         return n.length ? void i.initUI() : !1
     }, i
