@@ -2552,8 +2552,7 @@
   padding: 0 20px 0 40px;
 }
 #header .logo {
-  float: left;
-  margin-top: 18px;
+  margin-top: 20px;
 }
 #header .navigation > ul > li {
   padding: 0 15px;
@@ -2585,6 +2584,7 @@
 .navigation {
   text-align: right;
   margin-top: 50px;
+  padding-right: 0;
 }
 .navigation .navbar-nav {
   float: right;
@@ -3810,6 +3810,10 @@ img {
     float: none;
     text-align: center;
   }
+  #header .header-mask .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+  }
   #header .navbar-toggle {
     position: absolute;
     border-left: 1px solid #ddd;
@@ -3879,7 +3883,7 @@ img {
     float: left;
   }
   #header .navbar-nav {
-    margin: 4.5px -15px;
+    margin: 4.5px 0;
   }
 }
 
