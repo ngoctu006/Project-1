@@ -1,4 +1,5 @@
 @media (max-width: 767px) {
+  /*Header*/
 
   .section-slider-full .caption-slider .block-info .text-small :before, .section-slider-full .caption-slider .block-info .text-small :before,
   .section-slider-full .caption-slider .block-info .text-small :before, .section-slider-full .caption-slider .block-info .text-small :after {
@@ -10,11 +11,39 @@
   /*Slide show*/
   .section-slider-full .owl-item img {height: 430px;}
 
+  .owl-controls {display: none;}
+  .section-slider-full .caption-slider .block-info .text-big {
+    margin-top: 80px;
+    font-size: 45px;
+  }
+  .section-slider-full .caption-slider .block-info .text-big > span {
+    display: block;
+  }
+  .section-slider-full .caption-slider .block-info .text-big .color-black {
+    position: static;
+  }
+  .section-slider-full .caption-slider .block-button {
+    position: static;
+    margin-top: 75px;
+  }
+  .section-slider-full .caption-slider .block-button a {
+    display: block;
+    max-width: 210px;
+    margin: 0 auto;
+  }
+  .section-slider-full .caption-slider {
+    top: 0;
+    bottom: 0;
+  }
+  .section-slider-full .caption-slider .block-info .text-small {margin-top: 50px;}
   /*Homepage - search section*/
   .type-de-voyage-select{margin-top: 5px;}
   .section-search form {padding: 0;}
   .section-search form > div {margin-top: 0;}
   .section-search .submit {margin: 20px 0;}
+  .section-search form > div .search-input input {padding-left: 20px;}
+  .section-search form > div .search-input i {font-size: 15px; top: 50%; margin-top: -8px;}
+  .section-search form > div .search-input {max-width: 180px; margin: 0 auto;}
 
   /*Footer*/
   #footer {padding-top: 35px;}
@@ -126,9 +155,6 @@
   .section-team  .owl-controls .owl-prev .icon, 
   .section-team  .owl-controls .owl-next .icon{
       left: 15px !important;
-  }
-  .section {
-    padding-bottom: 85px;
   }
   .section-vos-envies .owl-controls .owl-prev .icon,
   .section-vos-envies .owl-controls .owl-next .icon {
