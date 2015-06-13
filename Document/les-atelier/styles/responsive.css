@@ -96,13 +96,74 @@
     color: #4b4949;
   }
 
-  /*Slider content*/
-  .owl-controls .owl-next .icon {
-
+  .title-section:before {bottom: 2px;}
+  /*Homepage icon next prev*/
+  .section-team .owl-controls .owl-next .icon,
+  .section-decouvrez-aussi .slider-decouvrez-aussi .owl-controls .owl-next .icon{
+    left: 22px;
   }
-  .owl-controls .owl-prev .icon, .owl-controls .owl-next .icon
-  .section-nos-brochures .owl-controls .owl-next .icon, .section-block-service .owl-controls .owl-next .icon {
+  .owl-controls .owl-prev .icon{
+    left: 0;
+  }
+  .owl-controls .owl-prev .icon, .owl-controls .owl-next .icon,
+  .section-nos-brochures .owl-controls .owl-prev .icon,
+  .section-block-service .owl-controls .owl-prev .icon,
+  .section-nos-brochures .owl-controls .owl-next .icon,
+  .section-block-service .owl-controls .owl-next .icon,
+  .section-decouvrez-aussi .slider-decouvrez-aussi .owl-controls .owl-prev .icon,
+  .section-decouvrez-aussi .slider-decouvrez-aussi .owl-controls .owl-next .icon {
     background-repeat: no-repeat;
     background-size: 10px 30px;
+    width: 10px;
+    height: 30px;
+    position: absolute;
   }
-}
+  .section-team .section-owlcarousel-item .owl-controls .owl-prev .icon,
+  .section-team .section-owlcarousel-item .owl-controls .owl-next .icon {
+    top: 80px;
+  }
+  .section-nos-brochures .owl-controls .owl-next .icon,
+  .section-block-service .owl-controls .owl-next .icon,
+  .section-nos-brochures .owl-controls .owl-prev .icon,
+  .section-block-service .owl-controls .owl-prev .icon {
+    top: auto;
+    bottom: 90px;
+  }
+  .section-nos-brochures .owl-controls .owl-next .icon,
+  .section-block-service .owl-controls .owl-next .icon {
+    left: 22px;
+    background-image: url('../images/icon-15.png');
+  }
+  .section-nos-brochures .owl-controls .owl-prev .icon,
+  .section-block-service .owl-controls .owl-prev .icon {
+    left: 0;
+    background-image: url('../images/icon-14.png');
+  }
+  .section-vos-envies .owl-controls .owl-prev .icon,
+  .section-vos-envies .owl-controls .owl-next .icon,
+  .section-decouvrez-aussi .slider-decouvrez-aussi .owl-controls .owl-prev .icon,
+  .section-decouvrez-aussi .slider-decouvrez-aussi .owl-controls .owl-next .icon{
+    top: 50%;
+    margin-top: -15px;
+  }
+  .section-decouvrez-aussi .slider-decouvrez-aussi .owl-controls .owl-prev .icon{
+    left: 22px;
+  }
+  .section-decouvrez-aussi .slider-decouvrez-aussi .owl-controls .owl-next .icon{
+    left: 12px;
+  }
+  .section-nos-brochures .owl-controls .owl-dots,
+  .section-block-service .owl-controls .owl-dots {
+    left: 50%;
+    bottom: 90px;
+    transform: translateX(-50%);
+    width: auto;
+    padding: 0;
+  }
+  .section-nos-brochures .item .block-info .link,
+  .section-block-service .item .block-info .link {
+    width: 100%;
+  }
+
+
+} 

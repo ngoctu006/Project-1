@@ -33,6 +33,7 @@ window.LADV = window.LADV || {}, window.LADV.Index = function() {
                                         items:2,
                                         mergeFit:true,
                                         margin: 10,
+                                        dots: true,
                                         merge: true
                                     },
                                     600:{
@@ -59,7 +60,8 @@ window.LADV = window.LADV || {}, window.LADV.Index = function() {
                         dots: !1,
                                 responsive:{
                                     0:{
-                                        items:1
+                                        items:1,
+                                        dots: true,
                                     },
                                     600:{
                                         items:i

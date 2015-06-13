@@ -114,23 +114,15 @@
       margin-left: 0;
       margin-right: 0; 
   }
-  .section-team .section-owlcarousel-item .owl-controls .owl-prev, 
+  .section-team .section-owlcarousel-item .owl-controls .owl-prev,
   .section-team .section-owlcarousel-item .owl-controls .owl-next{
       background: none;
       width: 35px;
-/*        left: 15px !important;*/
   }
-  .section-team  .owl-controls .owl-prev .icon, 
-  .section-team  .owl-controls .owl-next .icon{
-      left: 15px !important;
-  }
-  .section-slider-full,
-  .section-search,
   .section-vos-envies,
   .section-team,
   .section-nos-conseillers,
-  .section-decouvrez-aussi
-  {
+  .section-decouvrez-aussi {
     padding-bottom: 85px;
   }
   .section-vos-envies .owl-controls .owl-prev .icon,
@@ -165,7 +157,7 @@
   .section-decouvrez-aussi .slider-decouvrez-aussi .caption-2{
       display: none;
   }
-  .section-decouvrez-aussi .owl-controls .owl-dots{
+  .section-decouvrez-aussi .owl-controls .owl-dots {
       bottom: -50px;
   }
   .section-decouvrez-aussi .container{
@@ -191,14 +183,7 @@
     background: rgba(0, 0, 0, 0.5);
 
   }
-  .section-decouvrez-aussi .slider-decouvrez-aussi .owl-controls .owl-prev .icon{
-      top: 28%;
-      left: 15px;
-  }
-  .section-decouvrez-aussi .slider-decouvrez-aussi .owl-controls .owl-next .icon{
-      top: 28%;
-      left: 5px;
-  }
+
   .section-decouvrez-aussi .slider-decouvrez-aussi .block-btn a{
     position: absolute;
     bottom: 23%;
